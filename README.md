@@ -1,8 +1,11 @@
-# Project XYZ
+# Global AI Job Market & Salary Trends 2025
 
 **Global AI Job Market & Salary Trends 2025** is a comprehensive data analysis tool designed to streamline data exploration, analysis, and visualisation. The tool supports multiple data formats and provides an intuitive interface for both novice and expert data scientists.
 
 ## Table of Contents
+ <details>
+  <summary>Click here to expand the contents</summary>
+
 1. [Project Overview](#project-overview)
 2. [Dataset Content](#dataset-content)
 3. [Business Requirements](#business-requirements)
@@ -20,6 +23,7 @@
 14. [Credits](#credits)
 15. [Acknowledgements (optional)](#acknowledgements-optional)   
 
+</details>
 
 ## Dataset Content
 Global AI Job Market & Salary Trends 2025: Complete Analysis of 15,000+ Positions is a comprehensive dataset that contains detailed information about AI and machine learning job positions, salaries, and market trends across different countries, experience levels, and company sizes. Perfect for data science enthusiasts, career researchers, and market analysts for practice purposes.
@@ -61,16 +65,181 @@ Columns Description
 |job_description_length|	Character count of job description|	Integer
 |benefits_score|	Numerical score of benefits package (1-10)|	Float
 
-## Business Requirements
-* Describe your business requirements
+## Business Requirements: AI Employment and Salary Insights
+1. **Salary Determinants Analysis** : Identify and quantify the key factors that most significantly influence AI-related job salaries.
+- Analyze variables such as job title, education level, years of experience, company size, and industry sector.
+- Use statistical methods or machine learning models to determine the relative impact of each factor.
+- Present findings with clear, data-driven insights to guide compensation strategy and talent acquisition.
 
+2. **Remote Work Trend Analysis** : Investigate trends and patterns in remote AI-related job opportunities.
+- Measure the growth of remote positions over time.
+- Compare salary levels and job satisfaction between remote, hybrid, and on-site roles.
+- Identify emerging remote-friendly regions or companies leading in remote hiring.
+- Compare salary levels and job satisfaction between remote, hybrid, and on-site roles.
+- Identify emerging remote-friendly regions or companies leading in remote hiring.
+
+3. **Data Visualization and Reporting Standards**: Develop effective visualization techniques to communicate employment data insights.  
+- Use interactive dashboards and visual storytelling to present data.
+- Implement charts (e.g., heatmaps, box plots, scatterplots) for salary distributions, trends, and geographic patterns.
+- Ensure visual consistency, clarity, and accessibility across all reports and presentations.
+
+4. **Predictive Modeling for Salary and Hiring Trends**: Build and evaluate predictive models to forecast AI job salaries and employment demand.
+- Use regression or machine learning techniques.
+- Report model performance using accuracy metrics (e.g., R², MAE, RMSE).
+- Provide recommendations based on model predictions for workforce planning and policy decisions.
+
+5. **Geographic and Market Insights**: Identify and interpret regional variations and unexpected patterns in AI employment data.
+- Map salary, job density, and hiring trends across geographic areas.
+- Highlight surprising or emerging hotspots for AI talent and industry growth.
+- Use insights to inform regional investment, training, or recruitment strategies.
 
 ## Hypothesis and how to validate?
-* List here your project hypothesis(es) and how you envision validating it (them) 
+## Hypothesis:
+
+AI job salaries are primarily influenced by experience level, job title, company size, and education background.
+
+**Preparations Needed:**
+
+- Collect and clean AI job posting and employee salary data.
+
+- Standardize variables (e.g., job titles, locations, experience ranges).
+
+- Conduct feature engineering (e.g., encode categorical variables, handle missing data).
+
+**Validation Approach:**
+
+- Perform correlation and regression analysis to test statistical significance.
+
+- Apply machine learning feature importance analysis (e.g., random forest or XGBoost).
+
+- Compare results across multiple datasets for consistency.
+
+Acceptance Criteria:
+
+At least 3 statistically significant factors identified (p < 0.05).
+
+Model explains ≥70% of salary variance (R² ≥ 0.7).
+
+Clear ranking of top influencing factors presented with visuals.
+
+Requirement 2: Detect Patterns in Remote Work Trends
+
+Hypothesis:
+Remote work opportunities in AI have increased significantly post-2020, with consistent or higher salaries compared to on-site roles.
+
+Preparations Needed:
+
+Filter job listings by work mode (remote, hybrid, onsite).
+
+Segment data by year, job type, and region.
+
+Normalize salary comparisons by role and experience.
+
+Validation Approach:
+
+Conduct time-series and comparative trend analysis.
+
+Use statistical tests (e.g., t-test) to compare salary distributions.
+
+Visualize trend lines for remote vs onsite job postings.
+
+Acceptance Criteria:
+
+Statistically significant upward trend in remote job share identified.
+
+Salary parity or advantage for remote roles clearly demonstrated.
+
+Visual charts showing 3+ years of trend data included.
+
+Requirement 3: Establish Best Visualization Techniques
+
+Hypothesis:
+Interactive dashboards and comparative visualizations (box plots, heatmaps, geographic maps) are most effective for communicating employment insights.
+
+Preparations Needed:
+
+Evaluate dataset structure and visualization requirements.
+
+Test different visualization tools (Tableau, Power BI, Plotly, etc.).
+
+Design prototype visuals with stakeholder feedback loops.
+
+Validation Approach:
+
+Conduct stakeholder usability testing.
+
+Measure interpretation speed and clarity using feedback surveys.
+
+Acceptance Criteria:
+
+≥80% of stakeholders rate visualizations as “clear” or “highly effective.”
+
+Visuals meet accessibility and readability standards.
+
+All visuals dynamically reflect updated data sources.
+
+Requirement 4: Evaluate Prediction Model Performance
+
+Hypothesis:
+A machine learning model (e.g., Random Forest, XGBoost, or Linear Regression) can accurately predict AI job salaries using structured features.
+
+Preparations Needed:
+
+Prepare training and test datasets.
+
+Select and tune predictive algorithms.
+
+Define evaluation metrics (MAE, RMSE, R²).
+
+Validation Approach:
+
+Cross-validation on multiple data samples.
+
+Benchmark against baseline models (mean prediction, simple regression).
+
+Compare model accuracy across iterations.
+
+Acceptance Criteria:
+
+Model achieves ≥80% prediction accuracy or R² ≥ 0.8.
+
+Error metrics (MAE/RMSE) fall within acceptable tolerance (≤15% of salary mean).
+
+Final model and feature weights documented for reproducibility.
+
+Requirement 5: Discover Geographic Insights
+
+Hypothesis:
+Certain regions (including emerging markets) show unexpectedly high AI job concentrations or salary levels due to local policy, tech ecosystems, or remote flexibility.
+
+Preparations Needed:
+
+Enrich job data with geographic and economic indicators.
+
+Standardize location data (country, state, city).
+
+Integrate visualization layers (maps, choropleths).
+
+Validation Approach:
+
+Perform geospatial clustering and comparative regional analysis.
+
+Identify statistical outliers and confirm through external data sources.
+
+Acceptance Criteria:
+
+At least 3 regions identified with surprising or notable trends.
+
+Geographic data accurately mapped and validated.
+
+Insights supported by quantitative and contextual explanations.
 
 ## Project Plan
 * Outline the high-level steps taken for the analysis.
 * How was the data managed throughout the collection, processing, analysis and interpretation steps?
+
+Agile and Sprint methodologies were used to manage the project. The project was divided into several sprints, each focusing on specific tasks such as data collection, cleaning, analysis, and visualization. Regular meetings were held to review progress and adjust the plan as needed.
+
 * Why did you choose the research methodologies you used?
 
 ## The rationale to map the business requirements to the Data Visualisations
