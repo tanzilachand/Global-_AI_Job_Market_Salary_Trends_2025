@@ -94,75 +94,60 @@ Columns Description
 - Use insights to inform regional investment, training, or recruitment strategies.
 
 ## Hypothesis and how to validate?
-## Hypothesis:
+
+## Hypothesis 1. Identify Key Salary Determinants:
 
 AI job salaries are primarily influenced by experience level, job title, company size, and education background.
 
 **Preparations Needed:**
 
 - Collect and clean AI job posting and employee salary data.
-
 - Standardize variables (e.g., job titles, locations, experience ranges).
-
 - Conduct feature engineering (e.g., encode categorical variables, handle missing data).
 
 **Validation Approach:**
 
 - Perform correlation and regression analysis to test statistical significance.
-
 - Apply machine learning feature importance analysis (e.g., random forest or XGBoost).
-
 - Compare results across multiple datasets for consistency.
 
-Acceptance Criteria:
+**Acceptance Criteria:**
 
-At least 3 statistically significant factors identified (p < 0.05).
-
-Model explains ≥70% of salary variance (R² ≥ 0.7).
-
-Clear ranking of top influencing factors presented with visuals.
+- At least 3 statistically significant factors identified (p < 0.05).
+- Model explains ≥70% of salary variance (R² ≥ 0.7).
+- Clear ranking of top influencing factors presented with visuals.
 
 Requirement 2: Detect Patterns in Remote Work Trends
 
-Hypothesis:
-Remote work opportunities in AI have increased significantly post-2020, with consistent or higher salaries compared to on-site roles.
+**Hypothesis 2:** Remote work opportunities in AI have increased significantly post-2020, with consistent or higher salaries compared to on-site roles.
 
 Preparations Needed:
 
-Filter job listings by work mode (remote, hybrid, onsite).
+- Filter job listings by work mode (remote, hybrid, onsite).
+- Segment data by year, job type, and region.
+- Normalize salary comparisons by role and experience.
 
-Segment data by year, job type, and region.
+**Validation Approach:**
 
-Normalize salary comparisons by role and experience.
+- Conduct time-series and comparative trend analysis.
+- Use statistical tests (e.g., t-test) to compare salary distributions.
+- Visualize trend lines for remote vs onsite job postings.
 
-Validation Approach:
+**Acceptance Criteria:**
 
-Conduct time-series and comparative trend analysis.
-
-Use statistical tests (e.g., t-test) to compare salary distributions.
-
-Visualize trend lines for remote vs onsite job postings.
-
-Acceptance Criteria:
-
-Statistically significant upward trend in remote job share identified.
-
-Salary parity or advantage for remote roles clearly demonstrated.
-
-Visual charts showing 3+ years of trend data included.
+- Statistically significant upward trend in remote job share identified.
+- Salary parity or advantage for remote roles clearly demonstrated.
+- Visual charts showing 3+ years of trend data included.
 
 Requirement 3: Establish Best Visualization Techniques
 
-Hypothesis:
-Interactive dashboards and comparative visualizations (box plots, heatmaps, geographic maps) are most effective for communicating employment insights.
+**Hypothesis 3:** Interactive dashboards and comparative visualizations (box plots, heatmaps, geographic maps) are most effective for communicating employment insights.
 
 Preparations Needed:
 
-Evaluate dataset structure and visualization requirements.
-
-Test different visualization tools (Tableau, Power BI, Plotly, etc.).
-
-Design prototype visuals with stakeholder feedback loops.
+- Evaluate dataset structure and visualization requirements.
+- Test different visualization tools (Tableau, Power BI, Plotly, etc.).
+- Design prototype visuals with stakeholder feedback loops.
 
 Validation Approach:
 
@@ -180,7 +165,7 @@ All visuals dynamically reflect updated data sources.
 
 Requirement 4: Evaluate Prediction Model Performance
 
-Hypothesis:
+**Hypothesis 4:**
 A machine learning model (e.g., Random Forest, XGBoost, or Linear Regression) can accurately predict AI job salaries using structured features.
 
 Preparations Needed:
