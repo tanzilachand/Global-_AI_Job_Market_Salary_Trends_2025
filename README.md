@@ -251,7 +251,75 @@ Agile and Sprint methodologies were used to manage the project. The project was 
 | **Sprint 7 — Documentation & Review**                  | 13 Oct      | Finalise the README with business requirements, methodology, and insights.      |Export cleaned CSV datasets and prepare the project for submission                        |
 
 
-* Why did you choose the research methodologies you used?
+### Why did you choose the research methodologies you used?
+
+The research methodologies were chosen to ensure a structured, reliable, and reproducible approach to analyzing the **Global AI Job Market & Salary Trends 2025 dataset**. Since the project focuses on identifying trends, relationships, and patterns in quantitative data, a **data-driven and quantitative methodology** was the most appropriate choice.
+
+---
+
+## 1. Quantitative and Data-Driven Approach
+A **quantitative research design** was adopted because the dataset consists of measurable variables such as job titles, salaries, skills, and experience levels.  
+This approach enables:
+- Objective and numerical analysis.
+- Statistical validation of results.
+- Repeatability and transparency in findings.
+
+Using quantitative methods ensures conclusions are **data-based rather than opinion-based**.
+
+---
+
+## 2. Exploratory Data Analysis (EDA)
+**Exploratory Data Analysis (EDA)** was selected as the foundational method to:
+- Understand the structure of the dataset.
+- Detect patterns, anomalies, and correlations between variables.
+- Identify potential features for deeper analysis or modeling.
+
+EDA provides both **visual and statistical insights**, making it an essential first step in understanding the dataset.
+
+---
+
+## 3. ETL Framework (Extract, Transform, Load)
+The **ETL methodology** was applied to manage data effectively and maintain high quality throughout the analytics process.
+
+**Phases:**
+- **Extract:** Gather raw data from diverse sources and unify it.
+- **Transform:** Clean, standardize, and preprocess data (handle missing values, outliers, and inconsistent formats).
+- **Load:** Store transformed data in structured repositories for further analysis.
+
+This systematic process ensures **data consistency, accuracy, and traceability**.
+
+---
+
+## 4. Descriptive and Inferential Statistics
+Descriptive statistics (e.g., averages, frequencies, distributions) were used to summarize the dataset, while **inferential analysis** (e.g., correlations and trend analysis) was applied to identify patterns and relationships between variables.
+
+This combination supports **both understanding and prediction** within the data.
+
+---
+
+## 5. Visualization and Communication Tools
+Visualization methods were employed to communicate findings effectively and enhance interpretability.
+
+**Tools used:**
+- Python libraries: *Matplotlib*, *Seaborn*, *Plotly* 
+- BI platforms: *Power BI*
+
+These tools transform complex data into intuitive visuals, enabling clear communication of insights to both technical and non-technical audiences.
+
+---
+## 6. Documentation and Reproducibility
+All research steps, transformations, and analytical decisions were **documented** through:
+- Jupyter Notebooks and markdown logs
+- Version control using Git
+- ETL process documentation
+
+This ensures **transparency, reproducibility, and compliance** with data governance standards.
+
+---
+## 7. Summary
+The chosen methodologies — **quantitative analysis, EDA, ETL pipeline development, and data visualization** — collectively provide a comprehensive, scientific, and reproducible framework for analyzing the Global AI Job Market & Salary Trends 2025 dataset.  They align directly with the project’s goal: to derive actionable insights, identify emerging skills, and understand key patterns shaping the AI workforce landscape.
+
+
 
 ## The rationale to map the business requirements to the Data Visualisations
 * List your business requirements and a rationale to map them to the Data Visualisations
