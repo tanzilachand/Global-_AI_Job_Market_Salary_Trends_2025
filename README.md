@@ -355,8 +355,10 @@ The dashboard is designed to provide a comprehensive overview of the AI job mark
 ### Wireframes
 Wireframes were created using [Mockkup.ai](https://www.mockkup.ai/) to visualize the layout and structure of the dashboard pages. These wireframes helped in planning the placement of visualizations, filters, and navigation elements to ensure a user-friendly experience.
 
-![Wireframe Example](\Images\Overview.png)
+![Wireframe Example](Images/Overview.png)
 
+### Dashboard Pages Overview
+ [Click here to view the Power BI Dashboard](Dashboard\Dashboard.pbix) 
 
 | **Page Name**             | **Purpose / Focus**                                             | **Content / Widgets Used**                                                                                                                                                                                      |
 | ------------------------- | --------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
