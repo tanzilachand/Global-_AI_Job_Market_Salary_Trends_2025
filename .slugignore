@@ -1,33 +1,26 @@
-# Ignore notebooks, logs, and caches
+
 jupyter_notebooks/
 __pycache__/
 *.py[cod]
 *.log
-
-# Ignore environments
+ironments
 .venv/
 venv/
 env/
 *.env
-
-# Ignore node modules
 node_modules/
 npm-debug.log
 yarn-debug.log
 yarn-error.log
-
-# Ignore data or config files
 core.Microsoft*
 core.mongo*
 core.python*
 cloudinary_python.txt
 kaggle.json
-
-# Ignore Git and CI
 .git/
 .github/
-
-# Ignore docs and misc
 README.md
 tests/
 docs/
+images/
+data/Raw/
