@@ -8,20 +8,19 @@
 
 1. [Project Overview](#project-overview)
 2. [Dataset Content](#dataset-content)
-3. [Business Requirements](#business-requirements)
+3. [Business Requirements: AI Employment and Salary Insights](#business-requirements-ai-employment-and-salary-insights)
 4. [Hypothesis and how to validate?](#hypothesis-and-how-to-validate)
 5. [Project Plan](#project-plan)
-6. [The rationale to map the business requirements to the Data Visualisations](#the-r       ationale-to-map-the-business-requirements-to-the-data-visualisations)
-7. [Analysis techniques used](#analysis-techniques-used)
-8. [Ethical considerations](#ethical-considerations)
-9. [Dashboard Design](#dashboard-design)
-10. [Unfixed Bugs](#unfixed-bugs)
-11. [Development Roadmap](#development-roadmap)
-12. [Deployment](#deployment)
-    - [Heroku](#heroku)
+6. [Why did you choose the research methodologies you used?](#why-did-you-choose-the-research-methodologies-you-used)
+7. [The rationale to map the business requirements to the Data Visualisations](#the-rationale-to-map-the-business-requirements-to-the-data-visualisations)
+8. [Analysis techniques used](#analysis-techniques-used)
+9. [Ethical considerations](#ethical-considerations)
+10. [Dashboard Design](#dashboard-design)
+11. [Unfixed Bugs](#unfixed-bugs)
+12. [Development](#development)
 13. [Main Data Analysis Libraries](#main-data-analysis-libraries)
 14. [Credits](#credits)
-15. [Acknowledgements (optional)](#acknowledgements-optional)   
+15. [Useful Links](#useful-links)
 
 </details>
 
@@ -242,7 +241,7 @@ Agile and Sprint methodologies were used to manage the project. The project was 
 
 | Sprint / High Level Steps                   | Date(s)   | Goals                                          | Key Tasks                                     |
 |---------------------------------------------|------------|----------------------------------------------|-------------------------------------------------------------------------------------|
-| **Sprint 1 — Project Definition & Planning** | 07 Oct | Define the business problem and success criteria. | Identify business objectives & KPIs, Define scope, Assess data availability and sources.Draft the analytics roadmap or sprint plan **(KANBAN BOARD)** |
+| **Sprint 1 — Project Definition & Planning** | 07 Oct | Define the business problem and success criteria. | Identify business objectives & KPIs, Define scope, Assess data availability and sources.Draft the analytics roadmap or sprint plan  [**(KANBAN BOARD)**](KANBAN.md) |
 | **Sprint 2 — Data Collection**         | 07 Oct      | : Gather all necessary raw data from various sources                                  | Identify and connect to data sources (Kaggle). Extract data and create pipelines (ETL/ELT).|
 | **Sprint 3 — Data Cleaning & Preparation**     | 08 Oct | Prepare data for analysis | Handle missing values, duplicates, outliers. Normalize and transform data. Merge datasets and validate relationships. Create clean and structured dataset |
 | **Sprint 4 — Exploratory Data Analysis (EDAs)**            | 09 Oct      | Understand data patterns, trends, and relationships.  |   Summary statistics, visualizations, and correlations. Identify key variables influencing outcomes. Generate hypotheses for modeling. Document findings and insights.  EDA notebook/report (Jupyter, Power BI, etc.) Feature relevance summary, Visual dashboards (initial insights)|
@@ -435,6 +434,6 @@ Wireframes were created using [Mockkup.ai](https://www.mockkup.ai/) to visualize
 * ## Acknowledgment
 
 I would like to thank **Vasi**, **Neil**, **Mark** and all coordinating members for his valuable guidance and feedback throughout this project.  
-My gratitude also goes to my **fellow students** espcially **Team 4** (Mahabir Bhakerd, Stephen Beese, Adrian Sorbala and Rana Tahon) for their support and insightful discussions.  
+My gratitude also goes to my **fellow students** espcially **Team 3** (Mahabir Bhakerd, Stephen Beese, Adrian Sorbala and Rana Tahon) for their support and insightful discussions.  
 Finally, I appreciate the **Code Institute** for providing the resources and materials that made this project possible.
 
