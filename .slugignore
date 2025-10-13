@@ -24,3 +24,6 @@ tests/
 docs/
 images/
 data/
+
+*
+!dashboard/
