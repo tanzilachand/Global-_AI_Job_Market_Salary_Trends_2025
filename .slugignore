@@ -1,29 +1,35 @@
+# Ignore everything by default
+*
 
-jupyter_notebooks/
+# Don’t ignore the dashboard folder
+!dashboard/
+
+# Ignore hidden files inside dashboard except Procfile and requirements
+dashboard/.* 
+!dashboard/Procfile
+!dashboard/requirements.txt
+
+# Ignore data, images, notebooks, tests, docs
+dashboard/data/
+dashboard/images/
+dashboard/jupyter_notebooks/
+dashboard/tests/
+dashboard/docs/
+
+# Ignore Python caches
 __pycache__/
 *.py[cod]
 *.log
-ironments
+
+# Ignore local environments
 .venv/
 venv/
 env/
 *.env
-node_modules/
-npm-debug.log
-yarn-debug.log
-yarn-error.log
-core.Microsoft*
-core.mongo*
-core.python*
-cloudinary_python.txt
-kaggle.json
+
+# Ignore Git and CI
 .git/
 .github/
-README.md
-tests/
-docs/
-images/
-data/
 
-*
-!dashboard/
+# Ignore miscellaneous
+README.md
