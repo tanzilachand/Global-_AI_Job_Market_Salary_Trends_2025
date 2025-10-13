@@ -358,7 +358,7 @@ Wireframes were created using [Mockkup.ai](https://www.mockkup.ai/) to visualize
 ![Wireframe Example](Images/Overview.png)
 
 ### Dashboard Pages Overview
- [Click here to view the Power BI Dashboard](Dashboard\Dashboard.pbix) 
+ [Click here to view the Power BI Dashboard](Dashboard/Dashboard.pbix) 
 
 | **Page Name**             | **Purpose / Focus**                                             | **Content / Widgets Used**                                                                                                                                                                                      |
 | ------------------------- | --------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
