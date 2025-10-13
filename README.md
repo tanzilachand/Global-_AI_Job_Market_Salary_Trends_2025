@@ -240,13 +240,17 @@ salary_usd ~ years_experience + education_required + job_title + location
 Agile and Sprint methodologies were used to manage the project. The project was divided into several sprints, each focusing on specific tasks such as data collection, cleaning, analysis, and visualization. 
 
 
-| Sprint / High Level Steps                                                  | Date(s)         | Goals |                                                                                                                                                                        | -------------------------------------------- | --------------- | -------------------------------------------------------------- | -------------------------------- |
-| **Sprint 1 — Project Definition & Planning** | **07 Oct**      | Define the business problem and success criteria. | Key Tasks : Identify business objectives & KPIs                             |
-| **Sprint 2 — Data Validation & Quality Checks**         | **08 Oct**      | Validate the integrity of the cleaned dataset (check for duplicates, outliers, and inconsistencies) and confirm the correctness of new |features.                                              |
-| **Sprint 3 — Exploratory Analysis & Visualisation**     | **08 – 09 Oct** | Explore sales trends by region, platform, and publisher. Build quick visualisations to understand distributions and relationships between key variables. Prepare data for Tableau dashboards. | |
-| **Sprint 4 — Hypothesis Testing & Insights**            | **10 Oct**      | Statistically test hypotheses such as *reviews driving sales*, *multi-platform advantage*, and *first-party vs third-party performance*. Summarise findings and actionable insights.  |        |
-| **Sprint 5 — Dashboard Development**                    | **11 – 12 Oct** | Build an interactive Tableau dashboard to present sales patterns, platform comparisons, and review-driven trends in a clear, business-friendly format. |                                        |
-| **Sprint 6 — Documentation & Wrap-up**                  | **13 Oct**      | Finalise the README with business requirements, methodology, and insights. Export cleaned CSV datasets and prepare the project for handover or stakeholder review.    |                        |
+| Sprint / High Level Steps                   | Date(s)   | Goals                                          | Key Tasks                                     |
+|---------------------------------------------|------------|----------------------------------------------|-------------------------------------------------------------------------------------|
+| **Sprint 1 — Project Definition & Planning** | 07 Oct | Define the business problem and success criteria. | Identify business objectives & KPIs, Define scope, Assess data availability and sources.Draft the analytics roadmap or sprint plan **(KANBAN BOARD)** |
+| **Sprint 2 — Data Collection**         | 07 Oct      | : Gather all necessary raw data from various sources                                  | Identify and connect to data sources (Kaggle). Extract data and create pipelines (ETL/ELT).|
+| **Sprint 3 — Data Cleaning & Preparation**     | 08 Oct | Prepare data for analysis | Handle missing values, duplicates, outliers. Normalize and transform data. Merge datasets and validate relationships. Create clean and structured dataset |
+| **Sprint 4 — Exploratory Data Analysis (EDAs)**            | 09 Oct      | Understand data patterns, trends, and relationships.  |   Summary statistics, visualizations, and correlations. Identify key variables influencing outcomes. Generate hypotheses for modeling. Document findings and insights.  EDA notebook/report (Jupyter, Power BI, etc.) Feature relevance summary, Visual dashboards (initial insights)|
+| **Sprint 5 — Modeling & Advanced Analytics**                    | 10 Oct | Build and validate analytical or predictive models. | Feature engineering. Model selection and training (regression, clustering, etc.). Interpret model outputs. Trained model(s),Model performance metrics (e.g., R², accuracy, RMSE), Model documentation and explanation |                                   |
+| **Sprint 6 — Insights & Visualization**                  | 11-12 Oct      | Writing Insights Conclusions and Visualisation |  Create dashboards and visual reports ( Power BI). Summarize key findings and recommendations |
+| **Sprint 7 — Documentation & Review**                  | 13 Oct      | Finalise the README with business requirements, methodology, and insights.      |Export cleaned CSV datasets and prepare the project for submission                        |
+
+
 * Why did you choose the research methodologies you used?
 
 ## The rationale to map the business requirements to the Data Visualisations
