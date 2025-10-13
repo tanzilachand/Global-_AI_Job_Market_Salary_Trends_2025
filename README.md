@@ -417,21 +417,24 @@ Wireframes were created using [Mockkup.ai](https://www.mockkup.ai/) to visualize
 
 ## Credits 
 
-* In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-* You can break the credits section up into Content and Media, depending on what you have included in your project. 
+* Data source: [Kaggle Dataset](https://www.kaggle.com/datasets/bismasajjad/global-ai-job-market-and-salary-trends-2025) 
+
 
 ### Content 
 
 - The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign-Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+- Instructions on how to implement form validation on the Sign-Up page was taken from [Youtube](https://www.youtube.com/)
+
 
 ### Media
 
-- The photos used on the home and sign-up page are from This Open-Source site
-- The images used for the gallery page were taken from this other open-source site
+- for wireframes [Mockkup.ai](https://www.mockkup.ai/)
 
 
 
-## Acknowledgements (optional)
-* Thank the people who provided support through this project.
+* ## Acknowledgment
+
+I would like to thank **Vasi**, **Neil**, **Mark** and all coordinating members for his valuable guidance and feedback throughout this project.  
+My gratitude also goes to my **fellow students** espcially **Team 4** (Mahabir Bhakerd, Stephen Beese, Adrian Sorbala and Rana Tahon) for their support and insightful discussions.  
+Finally, I appreciate the **Code Institute** for providing the resources and materials that made this project possible.
+
