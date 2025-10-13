@@ -343,14 +343,31 @@ The chosen methodologies — **quantitative analysis, EDA, ETL pipeline developm
 | **9. Clustering Job Profiles (Hypothesis 9)** | Group similar roles/industries by skill set.<br>**Visuals:** Cluster scatterplots (PCA/t-SNE). | **Methods:** K-Means clustering.<br>**Limitations:** Sensitive to scaling and initial centroids. | Structured with one-hot encoded features for skills and industry. | Missing skills data filled with binary 0s; dimensionality reduced via PCA. | Used AI to generate optimal cluster evaluation scripts and 2D visualization styling for cluster interpretation. |
 
 ## Ethical considerations
-* Were there any data privacy, bias or fairness issues with the data?
-* How did you overcome any legal or societal issues?
+* Data chose is from a public source and does not contain any personal identifiable information (PII).
+* Ensure compliance with data privacy regulations (e.g., GDPR, CCPA) when handling user data.
+* there is no identifiable information in the dataset, so privacy concerns are minimal.
 
-## Dashboard Design
-* List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other item that your dashboard library supports.
-* Later, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but subsequently you used another plot type).
-* How were data insights communicated to technical and non-technical audiences?
-* Explain how the dashboard was designed to communicate complex data insights to different audiences. 
+
+## Dashboard Design:
+
+The dashboard is designed to provide a comprehensive overview of the AI job market and salary trends. It consists of multiple pages, each focusing on specific aspects of the data. The design prioritizes user experience, clarity, and interactivity to facilitate data exploration and insights discovery. Before creating the dashboard, wireframes were created to plan the layout and functionality of each page.
+
+### Wireframes
+Wireframes were created using [Mockkup.ai](https://www.mockkup.ai/) to visualize the layout and structure of the dashboard pages. These wireframes helped in planning the placement of visualizations, filters, and navigation elements to ensure a user-friendly experience.
+
+![Wireframe Example](\Images\Overview.png)
+
+
+| **Page Name**             | **Purpose / Focus**                                             | **Content / Widgets Used**                                                                                                                                                                                      |
+| ------------------------- | --------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **1. Overview / Summary** | Provides a high-level snapshot of the AI job market.            | - KPI Cards: Total jobs, average salary, top country.<br>- Line Chart: Job postings trend over time.<br>- Slicers: Year, job title, country.<br>- Navigation Buttons: Links to detailed pages.                  |
+| **2. Salary Insights**    | Explores salary patterns by location, industry, and experience. | - Filled Map: Salary by country (gray where no data).<br>- Box Plot: Salary distribution by company location.<br>- Bar Chart: Top 10 highest-paying job roles.<br>- Slicers: Experience level, employment type. |
+| **3. Skills Analysis**    | Highlights most in-demand and top-paying skills.                | - Horizontal Bar Chart: Most frequent skills.<br>- Word Cloud: Skill popularity visual.<br>- Donut Chart: Skill share by industry.<br>- Filters: Role, location.                                                |
+| **4. Industry Trends**    | Shows job distribution and salary evolution across industries.  | - Clustered Bar Chart: Job postings by industry.<br>- Line Chart: Salary trend over years.<br>- Dropdown Filter: Select specific industry.                                                                      |
+| **5. Clustering & Roles** | Displays K-Means clustering insights for AI job segmentation.   | - Scatter Plot (PCA): Clusters visualized in 2D space.<br>- Table: Top skills and industries per cluster.<br>- Legend: Cluster labels and colors.                                                               |
+| **6. Company Insights**   | Identifies companies leading in AI hiring and salary growth.    | - Bar Chart: Top hiring companies.<br>- KPI Cards: Highest-paying company, average salary per company.<br>- Drill-Through: Explore specific company metrics.                                                    |
+| **7. About / Metadata**   | Provides project details, data source, and usage guide.         | - Text Box: Dataset description and analysis goals.<br>- Buttons: Navigation and report info.                                                                        |
+
 
 ## Unfixed Bugs
 * Please mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation are not valid reasons to leave bugs unfixed.
