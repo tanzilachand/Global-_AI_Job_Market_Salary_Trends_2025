@@ -429,8 +429,6 @@ Wireframes were created using [Mockkup.ai](https://www.mockkup.ai/) to visualize
 
 - for wireframes [Mockkup.ai](https://www.mockkup.ai/)
 
-
-
 * ## Acknowledgment
 
 I would like to thank **Vasi**, **Neil**, **Mark** and all coordinating members for his valuable guidance and feedback throughout this project.  
