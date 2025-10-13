@@ -24,9 +24,11 @@
 15. [Acknowledgements (optional)](#acknowledgements-optional)   
 
 </details>
+
 ## Useful Links
 
 - [GitHub Repository](https://github.com/tanzilachand/Global-_AI_Job_Market_Salary_Trends_2025)
+- [Project Board](https://github.com/users/tanzilachand/projects/4)
 
   
 ## Dataset Content
@@ -69,29 +71,35 @@ Columns Description
 |benefits_score|	Numerical score of benefits package (1-10)|	Float
 
 ## Business Requirements: AI Employment and Salary Insights
-1. **Salary Determinants Analysis** : Identify and quantify the key factors that most significantly influence AI-related job salaries.
+
+### Salary Determinants Analysis: 
+Identify and quantify the key factors that most significantly influence AI-related job salaries.
 - Analyze variables such as job title, education level, years of experience, company size, and industry sector.
 - Use statistical methods or machine learning models to determine the relative impact of each factor.
 - Present findings with clear, data-driven insights to guide compensation strategy and talent acquisition.
 
-2. **Remote Work Trend Analysis** : Investigate trends and patterns in remote AI-related job opportunities.
+### Remote Work Trend Analysis:
+ Investigate trends and patterns in remote AI-related job opportunities.
 - Measure the growth of remote positions over time.
 - Compare salary levels and job satisfaction between remote, hybrid, and on-site roles.
 - Identify emerging remote-friendly regions or companies leading in remote hiring.
 - Compare salary levels and job satisfaction between remote, hybrid, and on-site roles.
 - Identify emerging remote-friendly regions or companies leading in remote hiring.
 
-3. **Data Visualization and Reporting Standards**: Develop effective visualization techniques to communicate employment data insights.  
+### Data Visualization and Reporting Standards:
+Develop effective visualization techniques to communicate employment data insights.
 - Use interactive dashboards and visual storytelling to present data.
 - Implement charts (e.g., heatmaps, box plots, scatterplots) for salary distributions, trends, and geographic patterns.
 - Ensure visual consistency, clarity, and accessibility across all reports and presentations.
 
-4. **Predictive Modeling for Salary and Hiring Trends**: Build and evaluate predictive models to forecast AI job salaries and employment demand.
+### Predictive Modeling for Salary and Hiring Trends:
+Build and evaluate predictive models to forecast AI job salaries and employment demand.
 - Use regression or machine learning techniques.
 - Report model performance using accuracy metrics (e.g., R², MAE, RMSE).
 - Provide recommendations based on model predictions for workforce planning and policy decisions.
 
-5. **Geographic and Market Insights**: Identify and interpret regional variations and unexpected patterns in AI employment data.
+### Geographic and Market Insights:
+Identify and interpret regional variations and unexpected patterns in AI employment data.
 - Map salary, job density, and hiring trends across geographic areas.
 - Highlight surprising or emerging hotspots for AI talent and industry growth.
 - Use insights to inform regional investment, training, or recruitment strategies.
