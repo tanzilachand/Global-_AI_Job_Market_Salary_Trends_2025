@@ -24,7 +24,11 @@
 15. [Acknowledgements (optional)](#acknowledgements-optional)   
 
 </details>
+## Useful Links
 
+- [GitHub Repository](https://github.com/tanzilachand/Global-_AI_Job_Market_Salary_Trends_2025)
+
+  
 ## Dataset Content
 Global AI Job Market & Salary Trends 2025: Complete Analysis of 15,000+ Positions is a comprehensive dataset that contains detailed information about AI and machine learning job positions, salaries, and market trends across different countries, experience levels, and company sizes. Perfect for data science enthusiasts, career researchers, and market analysts for practice purposes.
 
