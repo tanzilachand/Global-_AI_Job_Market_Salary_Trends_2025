@@ -106,136 +106,147 @@ Identify and interpret regional variations and unexpected patterns in AI employm
 
 ## Hypothesis and how to validate?
 
-## Hypothesis 1. Identify Key Salary Determinants:
+## Hypothesis 1 - AI job salaries have grown significantly year-over-year.
 
-AI job salaries are primarily influenced by experience level, job title, company size, and education background.
+**Explanation:** As AI technologies become more integral to various industries, the demand for skilled AI professionals is expected to rise, leading to higher salaries.
 
-**Preparations Needed:**
+**Method:** 
+- Conduct a time series analysis of AI job salaries over the past few years. Use statistical tests to determine if the year-over-year growth in salaries is significant.
+- Extract the year from the job posting date and group the data by year to calculate the average salary for each year.
+- Perform a linear regression analysis with year as the independent variable and average salary as the dependent variable to assess the trend over time.
 
-- Collect and clean AI job posting and employee salary data.
-- Standardize variables (e.g., job titles, locations, experience ranges).
-- Conduct feature engineering (e.g., encode categorical variables, handle missing data).
-
-**Validation Approach:**
-
-- Perform correlation and regression analysis to test statistical significance.
-- Apply machine learning feature importance analysis (e.g., random forest or XGBoost).
-- Compare results across multiple datasets for consistency.
-
-**Acceptance Criteria:**
-
-- At least 3 statistically significant factors identified (p < 0.05).
-- Model explains ≥70% of salary variance (R² ≥ 0.7).
-- Clear ranking of top influencing factors presented with visuals.
-
+**Validation:** 
+- Visualize the trend using line plots to illustrate salary growth over time.
+- Perform a linear regression analysis to quantify the growth rate and assess its significance.
+- Upward slope and statistically significant positive trend (P< 0.05) would support the hypothesis.
 Requirement 2: Detect Patterns in Remote Work Trends
 
-**Hypothesis 2:** Remote work opportunities in AI have increased significantly post-2020, with consistent or higher salaries compared to on-site roles.
+## Hypothesis 2 - Some AI roles have faster salary growth than others.
 
-Preparations Needed:
+**Explanation:**
 
-- Filter job listings by work mode (remote, hybrid, onsite).
-- Segment data by year, job type, and region.
-- Normalize salary comparisons by role and experience.
+ Different AI roles may experience varying levels of demand and specialization, leading to differential salary growth rates. 
 
-**Validation Approach:**
+**Method:**
+- Categorize the job postings by role (e.g., Data Scientist, Machine Learning Engineer, AI Researcher, etc.).
+- Calculate the average salary for each role over the years.
+- Perform a comparative analysis to identify which roles have experienced the highest salary growth rates.
 
-- Conduct time-series and comparative trend analysis.
-- Use statistical tests (e.g., t-test) to compare salary distributions.
-- Visualize trend lines for remote vs onsite job postings.
-
-**Acceptance Criteria:**
-
-- Statistically significant upward trend in remote job share identified.
-- Salary parity or advantage for remote roles clearly demonstrated.
-- Visual charts showing 3+ years of trend data included.
+**Validation:**
+- Use bar charts or line plots to visualize salary growth trends for different roles.
+- Conduct ANOVA or similar statistical tests to determine if the differences in salary growth rates among roles are statistically significant.
+- Significant differences in growth rates among roles would support the hypothesis.
 
 Requirement 3: Establish Best Visualization Techniques
 
-**Hypothesis 3:** Interactive dashboards and comparative visualizations (box plots, heatmaps, geographic maps) are most effective for communicating employment insights.
+# Hypothesis 3 - Remote work opportunities lead to higher salaries in AI jobs.
 
-Preparations Needed:
+**Explanation:**
+- Remote work can expand the talent pool for employers, allowing them to access highly skilled professionals from different geographic locations. This increased competition for top talent may drive up salaries for remote AI job positions.
 
-- Evaluate dataset structure and visualization requirements.
-- Test different visualization tools (Tableau, Power BI, Plotly, etc.).
-- Design prototype visuals with stakeholder feedback loops.
+**Method:**
+Group data by remote_ratio (0, 50, 100).
+Compare mean and median salaries across groups using ANOVA or Kruskal-Wallis test.
 
-Validation Approach:
-
-Conduct stakeholder usability testing.
-
-Measure interpretation speed and clarity using feedback surveys.
-
-Acceptance Criteria:
-
-≥80% of stakeholders rate visualizations as “clear” or “highly effective.”
-
-Visuals meet accessibility and readability standards.
-
-All visuals dynamically reflect updated data sources.
-
+**Validation:**
+- H0: Mean salaries are the same across remote work levels.
+- H1: At least one group mean is different.
+p-value < 0.05 ⇒ salary differs significantly by remote work level.
+Boxplots to visualize distributions
 Requirement 4: Evaluate Prediction Model Performance
 
-**Hypothesis 4:**
-A machine learning model (e.g., Random Forest, XGBoost, or Linear Regression) can accurately predict AI job salaries using structured features.
+## Hypothesis 4 - Specific industries (e.g., Tech, Finance) dominate high-paying AI roles.
 
-Preparations Needed:
+**Explanation:** Certain industries may have a higher demand for AI expertise and thus offer more competitive salaries to attract top talent.
 
-Prepare training and test datasets.
+**Method:**
+Group by industry and compute average salary_usd.
+Use ANOVA or Kruskal-Wallis test.
 
-Select and tune predictive algorithms.
+**Validation:**
+p < 0.05 indicates significant differences across industries.
 
-Define evaluation metrics (MAE, RMSE, R²).
+## Hypothesis 5 -  Higher education levels lead to greater salary dispersion (variance).
 
-Validation Approach:
+**Explanation:**
+ Advanced degrees may lead to a wider range of salaries due to varying levels of expertise and specialization. 
 
-Cross-validation on multiple data samples.
+**Methodology:**
 
-Benchmark against baseline models (mean prediction, simple regression).
+- Group by education_required.
+- Compute standard deviation of salary_usd.
 
-Compare model accuracy across iterations.
+**Validation:**
 
-Acceptance Criteria:
+- Compare variance using Levene’s test or F-test.
+- Accept if p < 0.05 (significant difference in dispersion).
 
-Model achieves ≥80% prediction accuracy or R² ≥ 0.8.
+## Hypothesis 6 - Larger companies offer higher salaries but lower remote ratios.
 
-Error metrics (MAE/RMSE) fall within acceptable tolerance (≤15% of salary mean).
+**Explanation:**
+ Larger companies may have more resources to offer competitive salaries, but they might also have more established office cultures that limit remote work options.
 
-Final model and feature weights documented for reproducibility.
+**Methodology:**
+Analyze correlation between company_size, salary_usd, and remote_ratio.
+Use correlation heatmaps or multiple regression.
 
-Requirement 5: Discover Geographic Insights
+**Validation:**
+Accept if correlation between company_size and salary_usd is positive, and with remote_ratio is negative.
 
-Hypothesis:
-Certain regions (including emerging markets) show unexpectedly high AI job concentrations or salary levels due to local policy, tech ecosystems, or remote flexibility.
+## Hypothesis 7: Certain skills (e.g., Python, TensorFlow) are linked to above-average salaries.
 
-Preparations Needed:
+**Explanation:**
+ Possessing in-demand technical skills can make candidates more competitive, leading to higher salary offers. 
+**Methodology:**
+Use NLP keyword extraction from job_description.
+Create binary skill presence columns (e.g., Python = 1/0).
+Run multiple regression or feature importance analysis.
 
-Enrich job data with geographic and economic indicators.
+**Validation:**
+Accept if coefficients or feature importances are significant for those skills.
 
-Standardize location data (country, state, city).
+## Hypothesis 8: Salary Prediction Models - Experience and education significantly influence AI job salaries.
 
-Integrate visualization layers (maps, choropleths).
+**Explanation:**
+- Experience and education are commonly believed to be key factors in determining salary levels.
 
-Validation Approach:
+**Methodology:**
+- Use multiple linear regression or random forest models:
+salary_usd ~ years_experience + education_required + job_title + location
+- Check feature importance or regression coefficients.
 
-Perform geospatial clustering and comparative regional analysis.
+**Validation:**
+- Split data (train/test 80:20) and measure R², MAE, RMSE.
+- Use cross-validation to confirm stability.
+- Accept hypothesis if model shows strong positive correlation between salary and experience/education.
 
-Identify statistical outliers and confirm through external data sources.
+## Hypothesis 9: Cluster Analysis based on skills and industry
 
-Acceptance Criteria:
+**Explanation:**
+- Clustering can reveal natural groupings of job roles based on required skills and industry sectors, which may not be immediately apparent through traditional analysis. 
 
-At least 3 regions identified with surprising or notable trends.
+**Methodology:**
+- Use K-Means clustering on skill presence and industry one-hot encoded features.
+- Determine optimal number of clusters using the KMeans clustering.
+- Visualize clusters using PCA or t-SNE for dimensionality reduction.
 
-Geographic data accurately mapped and validated.
+**Validation:**
+- Analyze cluster characteristics (e.g., average salary, common skills).
+- Accept if distinct clusters with meaningful interpretations are identified.
 
-Insights supported by quantitative and contextual explanations.
 
 ## Project Plan
-* Outline the high-level steps taken for the analysis.
-* How was the data managed throughout the collection, processing, analysis and interpretation steps?
 
-Agile and Sprint methodologies were used to manage the project. The project was divided into several sprints, each focusing on specific tasks such as data collection, cleaning, analysis, and visualization. Regular meetings were held to review progress and adjust the plan as needed.
+Agile and Sprint methodologies were used to manage the project. The project was divided into several sprints, each focusing on specific tasks such as data collection, cleaning, analysis, and visualization. 
 
+
+| Sprint / High Level Steps                                                  | Date(s)         | Goals |                                                                                                                                                                        | -------------------------------------------- | --------------- | -------------------------------------------------------------- | -------------------------------- |
+| **Sprint 1 — Project Definition & Planning** | **07 Oct**      | Define the business problem and success criteria. | Key Tasks : Identify business objectives & KPIs                             |
+| **Sprint 2 — Data Validation & Quality Checks**         | **08 Oct**      | Validate the integrity of the cleaned dataset (check for duplicates, outliers, and inconsistencies) and confirm the correctness of new |features.                                              |
+| **Sprint 3 — Exploratory Analysis & Visualisation**     | **08 – 09 Oct** | Explore sales trends by region, platform, and publisher. Build quick visualisations to understand distributions and relationships between key variables. Prepare data for Tableau dashboards. | |
+| **Sprint 4 — Hypothesis Testing & Insights**            | **10 Oct**      | Statistically test hypotheses such as *reviews driving sales*, *multi-platform advantage*, and *first-party vs third-party performance*. Summarise findings and actionable insights.  |        |
+| **Sprint 5 — Dashboard Development**                    | **11 – 12 Oct** | Build an interactive Tableau dashboard to present sales patterns, platform comparisons, and review-driven trends in a clear, business-friendly format. |                                        |
+| **Sprint 6 — Documentation & Wrap-up**                  | **13 Oct**      | Finalise the README with business requirements, methodology, and insights. Export cleaned CSV datasets and prepare the project for handover or stakeholder review.    |                        |
 * Why did you choose the research methodologies you used?
 
 ## The rationale to map the business requirements to the Data Visualisations
