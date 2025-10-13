@@ -372,31 +372,47 @@ Wireframes were created using [Mockkup.ai](https://www.mockkup.ai/) to visualize
 
 
 ## Unfixed Bugs
-* Please mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation are not valid reasons to leave bugs unfixed.
-* Did you recognise gaps in your knowledge, and how did you address them?
-* If applicable, include evidence of feedback received (from peers or instructors) and how it improved your approach or understanding.
+* Some code error were found most of them were fixed with the help of ChatGPT and copilot.
+* These were several statistical advanced concepts that can be applied but due to knowledge gap they were not implemented.
+* Some visualisations can be improved with more interactivity but due to time constraint they were not implemented.
+* During the project I have been in contact with my previous project team that helped me to solve many problems in a short time and to stay on track.
 
 ## Development Roadmap
-* What challenges did you face, and what strategies were used to overcome these challenges?
-* What new skills or tools do you plan to learn next based on your project experience? 
+* main challenges faced during the project  were data cleaning and feature engineering.
+* Strategies used to overcome these challenges included leveraging libraries like Pandas for data manipulation and Scikit-learn for feature engineering.
+* More about Data Visualisation and Dashboard designs.
+* Machine Learning models and their performance metrics.
+* SQL & Cloud Databases (BigQuery/PostgreSQL)
 
 ## Deployment
-### Heroku
-
-* The App live link is: https://YOUR_APP_NAME.herokuapp.com/ 
-* Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
-* The project was deployed to Heroku using the following steps.
-
-1. Log in to Heroku and create an App
-2. From the Deploy tab, select GitHub as the deployment method.
-3. Select your repository name and click Search. Once it is found, click Connect.
-4. Select the branch you want to deploy, then click Deploy Branch.
-5. The deployment process should happen smoothly if all deployment files are fully functional. Click now the button Open App on the top of the page to access your App.
-6. If the slug size is too large then add large files not required for the app to the .slugignore file.
+* The project was deployed on GitHub and Power BI service.
+* [GitHub Repository](https://github.com/tanzilachand/Global-_AI_Job_Market_Salary_Trends_2025)
+* [Click here to view the Power BI Dashboard](Dashboard/Dashboard.pbix) 
 
 
 ## Main Data Analysis Libraries
 * Here you should list the libraries you used in the project and provide an example(s) of how you used these libraries.
+
+# Libraries and Functions Used
+
+| **Library / Function** | **Usage in the Project** |
+|-------------------------|---------------------------|
+| **Python** | Core programming language for data preprocessing, statistical testing, modelling, and visualisation. |
+| **NumPy (`np`)** | Supported numerical operations, mathematical calculations, and array-based computations. |
+| **Pandas (`pd`)** | Handled data loading, cleaning, transformation, and preparation for analysis and export to Tableau. |
+| **Seaborn (`sns`)** | Created statistical visualisations (scatter plots, boxplots, heatmaps) to explore variable relationships. |
+| **Matplotlib (`plt`)** | Produced exploratory charts (trend lines, distributions) for data understanding before dashboard design. |
+| **Plotly Express (`px`)** | Built interactive visualisations (e.g., boxplots, scatterplots) with log scales and hover insights. |
+| **Statsmodels (`sm`)** | Applied advanced statistical tests (e.g., Tukey HSD) and regression modelling for inference. |
+| **SciPy (`stats`, `levene`, `spearmanr`, `f_oneway`, `linregress`, `ttest_ind`, `mannwhitneyu`)** | Conducted statistical tests including ANOVA, correlation, regression, and variance analysis to validate hypotheses. |
+| **Scikit-learn (`sklearn`)** | Implemented predictive modelling and evaluation: |
+| ├── `LinearRegression` | Built baseline regression models to predict AI salaries based on experience and education. |
+| ├── `RandomForestRegressor` | Used ensemble learning to capture non-linear salary relationships and improve prediction accuracy. |
+| ├── `train_test_split`, `KFold`, `cross_val_score` | Split data for training/testing and performed model cross-validation. |
+| ├── `mean_squared_error`, `mean_absolute_error`, `r2_score`, `make_scorer` | Evaluated and compared model performance metrics. |
+| **`re` (Regular Expressions)** | Cleaned and standardised text fields (e.g., job titles, skills) for NLP-based analysis. |
+| **`warnings`** | Suppressed irrelevant system warnings for cleaner output during model execution. |
+| **Power BI** | Created final interactive dashboards with KPIs, filters, regional trends, and validation of model insights. |
 
 
 ## Credits 
